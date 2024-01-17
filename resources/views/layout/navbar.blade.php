@@ -8,7 +8,7 @@
 
         <div class="navbar-brand navbar-brand-xs">
             <a href="index.html" class="d-inline-block">
-                <img src="assets/images/logo_icon_light.png" alt="">
+                <img src="{{asset('Uran/assets/images/logo.png')}}" alt="">
             </a>
         </div>
     </div>
@@ -16,7 +16,7 @@
     <div class="d-flex flex-1 d-md-none">
         <div class="navbar-brand mr-auto">
             <a href="index.html" class="d-inline-block">
-                <img src="assets/images/logo_dark.png" alt="">
+                <img src="{{asset('Uran/assets/images/logo.png')}}" alt="">
             </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
@@ -45,7 +45,7 @@
     </div>
 </div>
 <div class="page-content">
-    <div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+    <div class="sidebar sidebar-dark  sidebar-main sidebar-expand-md" style="background-color: rgb(4, 70, 145)">
         <div class="sidebar-mobile-toggler text-center">
             <a href="#" class="sidebar-mobile-main-toggle">
                 <i class="icon-arrow-left8"></i>
@@ -56,3 +56,4 @@
                 <i class="icon-screen-normal"></i>
             </a>
         </div>
+        

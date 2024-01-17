@@ -3,11 +3,12 @@
 @section('content')
     <div class="container mt-3">
         <h2>Keluahan List</h2>
-        @if(session('success'))
+        @if (session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
-            </div>
-        @endif        <table class="table">
+            </div> <a href="{{ route('keluahans.create') }}" class="btn btn-secondary mt-3">tambahkan keluahan</a>
+        @endif
+        <table class="table">
             <thead>
                 <tr>
                     <th>Nama Pengeluh</th>
@@ -16,17 +17,19 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($keluahans as $keluhan)
+                @foreach ($keluahans as $keluhan)
                     <tr>
                         <td>{{ $keluhan->nama_pengeluh }}</td>
                         <td>{{ $keluhan->judul_keluhan }}</td>
                         <td>
                             <a href="{{ route('keluahans.show', $keluhan->id) }}" class="btn btn-info">View</a>
                             <a href="{{ route('keluahans.edit', $keluhan->id) }}" class="btn btn-warning">Edit</a>
-                            <form action="{{ route('keluahans.destroy', $keluhan->id) }}" method="POST" style="display:inline">
+                            <form action="{{ route('keluahans.destroy', $keluhan->id) }}" method="POST"
+                                style="display:inline">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                                <button type="submit" class="btn btn-danger"
+                                    onclick="return confirm('Are you sure?')">Delete</button>
                             </form>
                         </td>
                     </tr>

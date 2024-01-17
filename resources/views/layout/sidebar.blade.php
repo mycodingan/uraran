@@ -1,15 +1,9 @@
-			<!-- Sidebar content -->
-			<div class="sidebar-content">
+			<div class="sidebar-content  bg-primary">
 
-				<!-- Support -->
-				<div class="card card-body">
-					<a href="http://kopyov.ticksy.com" class="btn bg-success-400 btn-block" target="_blank"><i
+				<div class="card card-body bg-primary-800" >
+					<a href="http://kopyov.ticksy.com" class="btn bg-primary-700 btn-block" target="_blank"><i
 							class="icon-lifebuoy mr-2"></i>URAN</a>
 				</div>
-				<!-- /support -->
-
-
-				<!-- Main navigation -->
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
 						<li class="nav-item-header">
@@ -38,13 +32,11 @@
 							</ul>
 						</li>
                         <li class="nav-item-header">
-							<div class="text-uppercase font-size-xs line-height-xs">Absen Warga</div> <i
+							<div class="text-uppercase font-size-xs line-height-xs">Lapor</div> <i
 								class="icon-menu"></i>
 						</li>
-						<li class="nav-item"><a href="#" class="nav-link active">Data Warga</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">add warga</a></li>
-						<li class="nav-item"><a href="{#" class="nav-link">keluhan warga</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Lapor</a></li>
+						<li class="nav-item"><a href="#" class="nav-link active">Tambah laporan</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Lihat laporan</a></li>
 					</ul>
 				</div>
 			</div>

@@ -9,8 +9,7 @@
 
             <div class="header-elements d-none py-0 mb-3 mb-md-0">
                 <div class="breadcrumb">
-                    <a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-                    <span class="breadcrumb-item active">Introduction</span>
+                    <a href="{{route('landing_page')}}" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
                 </div>
             </div>
         </div>
