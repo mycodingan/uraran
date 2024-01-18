@@ -1,8 +1,9 @@
 			<div class="sidebar-content  bg-primary">
 
-				<div class="card card-body bg-primary-400" >
-					<a href="http://kopyov.ticksy.com" class="btn bg-primary-700 btn-block" target="_blank"><i
-							class="icon-lifebuoy mr-2"></i>URAN</a>
+				<div class="card card-body bg-primary" >
+					<a href="http://kopyov.ticksy.com" class="btn bg-primary-700 btn-block" target="_blank" style="background-color: rgb(128, 198, 255)">
+						<img src="{{asset('Uran/assets/images/logo.png')}}" alt="" width="50">
+						URAN</a>
 				</div>
 				<div class="card card-sidebar-mobile">
 					<ul class="nav nav-sidebar" data-nav-type="accordion">
@@ -12,8 +13,16 @@
 						</li>
 						<li class="nav-item"><a href="{{route('wargas.index')}}" class="nav-link">Data Warga</a></li>
 						<li class="nav-item"><a href="{{route('wargas.create')}}" class="nav-link">add warga</a></li>
-						<li class="nav-item"><a href="{{route('keluahans.index')}}" class="nav-link">keluhan warga</a></li>
-						<li class="nav-item"><a href="{{route('keluahans.create')}}" class="nav-link">Lapor</a></li>
+						<li class="nav-item"><a href="{{route('keluahans.index')}}" class="nav-link">member warga 	</a></li>
+
+						<li class="nav-item-header">
+							<div class="text-uppercase font-size-xs line-height-xs caret-slate-400">Absensi warga</div> <i
+								class="icon-menu"></i>
+						</li>
+						<li class="nav-item"><a href="{{route('absensi.index')}}" class="nav-link">Data Absen</a></li>
+						<li class="nav-item"><a href="{{route('wargas.create')}}" class="nav-link">Tambah Absensi</a></li>
+						<li class="nav-item"><a href="{{route('keluahans.index')}}" class="nav-link">member warga 	</a></li>
+
 
 						<li class="nav-item-header">
 							<div class="text-uppercase font-size-xs line-height-xs">informasi</div> <i
