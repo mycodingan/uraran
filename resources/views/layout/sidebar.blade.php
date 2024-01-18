@@ -35,8 +35,8 @@
 							<div class="text-uppercase font-size-xs line-height-xs">Lapor</div> <i
 								class="icon-menu"></i>
 						</li>
-						<li class="nav-item"><a href="#" class="nav-link active">Tambah laporan</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Lihat laporan</a></li>
+						<li class="nav-item"><a href="{{route('keluahans.create')}}" class="nav-link active">Tambah laporan</a></li>
+						<li class="nav-item"><a href="{{route('keluahans.index')}}" class="nav-link">Lihat laporan</a></li>
 					</ul>
 				</div>
 			</div>
