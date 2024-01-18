@@ -9,6 +9,7 @@ use App\Http\Controllers\WargaController;
 use App\Http\Controllers\KeluahanController;
 use App\Http\Controllers\IuranController;
 use App\Http\Controllers\landing_page;
+use App\Http\Controllers\NewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,6 +78,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/absensi/{absensiKehadiran}/destroy', [absensiKehadiranController::class, 'destroy'])->name('absensi.destroy');
     Route::get('/absensi/showByDate', [absensiKehadiranController::class, 'showByDate'])->name('absensi.showByDate');
     Route::get('/absensi/pdf', [absensiKehadiranController::class, 'generatePDF'])->name('absensi.pdf');
+
+    Route::get('/news', [NewsController::class, 'index']);
 });
 
 require __DIR__ . '/auth.php';
