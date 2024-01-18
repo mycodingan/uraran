@@ -1,9 +1,9 @@
 <div class="navbar navbar-expand-md navbar-light">
-    <div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+    <div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center" style="background-color: #2195f34d">
         <div class="navbar-brand navbar-brand-md">
             <a href="index.html" class="d-inline-block">
-                <img src="assets/images/logo_light.png" alt="">
-            </a>
+                <img src="{{asset('Uran/assets/images/logo.png')}}" alt="">
+                </a>
         </div>
 
         <div class="navbar-brand navbar-brand-xs">
@@ -45,7 +45,7 @@
     </div>
 </div>
 <div class="page-content">
-    <div class="sidebar sidebar-dark  sidebar-main sidebar-expand-md" style="background-color: rgb(4, 70, 145)">
+    <div class="sidebar sidebar-dark  sidebar-main sidebar-expand-md" style="background-color: #2196F3">
         <div class="sidebar-mobile-toggler text-center">
             <a href="#" class="sidebar-mobile-main-toggle">
                 <i class="icon-arrow-left8"></i>
