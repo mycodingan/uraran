@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\AbsensiKehadiran;
-use Barryvdh\DomPDF\PDF;
+use Barryvdh\DomPDF\Facade as PDF;
+use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 use Carbon\Carbon;
+
 
 class absensiKehadiranController extends Controller
 {
@@ -81,8 +83,8 @@ class absensiKehadiranController extends Controller
     {
         $absensiKehadirans = AbsensiKehadiran::all();
 
-        $pdf = PDF::loadView('absensi.pdf', compact('absensiKehadirans'));
-
-        return $pdf->download('absensi.pdf');
-    }
+        $pdf = FacadePdf::loadView('absensi.pdf', compact('absensiKehadirans'));
+    
+        return $pdf->download('absensi.pdf');   
+     }
 }

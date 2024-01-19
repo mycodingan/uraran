@@ -1,4 +1,4 @@
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <header class="container header">
     <nav class="nav">
       <div class="logo">
@@ -12,7 +12,7 @@
 
         <ul class="nav_menu_list">
           <li class="nav_menu_item">
-            <a href="#" class="nav_menu_link">informasi</a>
+            <a href="{{route('informasis.index')}}" class="nav_menu_link">informasi</a>
           </li>
           <li class="nav_menu_item">
             <a href="{{route('iurans.create')}}" class="nav_menu_link">Transaksi</a>

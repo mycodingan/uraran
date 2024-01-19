@@ -26,8 +26,8 @@
 							<div class="text-uppercase font-size-xs line-height-xs">informasi</div> <i
 								class="icon-menu"></i>
 						</li>
-						<li class="nav-item"><a href="base_scss_css.html" class="nav-link">add informasi</a></li>
-						<li class="nav-item"><a href="base_scss_compile.html" class="nav-link">informasi</a></li>
+						<li class="nav-item"><a href="{{route('informasis.create')}}" class="nav-link">add informasi</a></li>
+						<li class="nav-item"><a href="{{route('informasis.index')}}" class="nav-link">informasi</a></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link">Berita</a>
 							<ul class="nav nav-group-sub" data-submenu-title="Plugins">

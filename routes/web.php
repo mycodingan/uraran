@@ -67,8 +67,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/iurans/{iuran}/edit', [IuranController::class, 'edit'])->name('iurans.edit');
     Route::put('/iurans/{iuran}/update', [IuranController::class, 'update'])->name('iurans.update');
     Route::delete('/iurans/{iuran}/destroy', [IuranController::class, 'destroy'])->name('iurans.destroy');
-
-
+ 
+    Route::get('/absensi/showByDate', [absensiKehadiranController::class, 'showByDate'])->name('absensi.showByDate');
+    Route::get('/absensi/pdf', [absensiKehadiranController::class, 'generatePDF'])->name('absensi.pdf');
     Route::get('/absensi', [absensiKehadiranController::class, 'index'])->name('absensi.index');
     Route::get('/absensi/create', [absensiKehadiranController::class, 'create'])->name('absensi.create');
     Route::post('/absensi/store', [absensiKehadiranController::class, 'store'])->name('absensi.store');
@@ -76,8 +77,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/absensi/{absensiKehadiran}/edit', [absensiKehadiranController::class, 'edit'])->name('absensi.edit');
     Route::put('/absensi/{absensiKehadiran}/update', [absensiKehadiranController::class, 'update'])->name('absensi.update');
     Route::delete('/absensi/{absensiKehadiran}/destroy', [absensiKehadiranController::class, 'destroy'])->name('absensi.destroy');
-    Route::get('/absensi/showByDate', [absensiKehadiranController::class, 'showByDate'])->name('absensi.showByDate');
-    Route::get('/absensi/pdf', [absensiKehadiranController::class, 'generatePDF'])->name('absensi.pdf');
 
     Route::get('/informasis', [informasiController::class, 'index'])->name('informasis.index');
     Route::get('/informasis/create', [informasiController::class, 'create'])->name('informasis.create');
