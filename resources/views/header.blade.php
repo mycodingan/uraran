@@ -1,7 +1,5 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <!-- ==== HEADER ==== -->
   <header class="container header">
-        <!-- ==== NAVBAR ==== -->
     <nav class="nav">
       <div class="logo">
         <h2>Uran</h2>
@@ -14,20 +12,36 @@
 
         <ul class="nav_menu_list">
           <li class="nav_menu_item">
-            <a href="# " class="nav_menu_link">informasi</a>
+            <a href="#" class="nav_menu_link">informasi</a>
           </li>
           <li class="nav_menu_item">
-            <a href="#" class="nav_menu_link">Transaksi</a>
+            <a href="{{route('iurans.create')}}" class="nav_menu_link">Transaksi</a>
           </li>
           <li class="nav_menu_item">
-            <a href="#" class="nav_menu_link">laporan</a>
+            <a href="{{route('keluahans.create')}}" class="nav_menu_link">laporan</a>
           </li>
           <li class="nav_menu_item">
-            <a href="#" class="nav_menu_link">profile</a>
+            <a href="{{route('profile.edit')}}" class="nav_menu_link">profile</a>
           </li>
-        </ul>
-      </div>
+        </ul> 
 
+      </div>
+      <div class="d-flex justify-content-center text-center">
+        @auth
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="btn btn-primary caret-white">
+                    <p class="font-bold font-serif" style="color: white">Logout</p>
+                </button>
+            </form>
+        @else
+            <button class="btn btn-primary caret-white">
+                <a href="{{ route('login') }}" class="caret-white text-decoration-none">
+                    <p class="font-bold font-serif" style="color: white">Masuk</p>
+                </a>
+            </button>
+        @endauth
+    </div> 
       <button class="toggle_btn" id="toggle_btn">
         <i class="ri-menu-line"></i>
       </button>

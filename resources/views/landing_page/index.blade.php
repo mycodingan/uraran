@@ -17,7 +17,7 @@
 
                     <div class="btn_wrapper">
                       <a href="{{route('wargas.index')}}">  <button class="btn view_more_btn">
-                            Get started <i class="ri-arrow-right-line"></i>
+                           Mulai <i class="ri-arrow-right-line"></i>
                         </button>
                     </a>
                     </div>

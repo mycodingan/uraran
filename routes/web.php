@@ -9,6 +9,7 @@ use App\Http\Controllers\WargaController;
 use App\Http\Controllers\KeluahanController;
 use App\Http\Controllers\IuranController;
 use App\Http\Controllers\landing_page;
+use App\Http\Controllers\informasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,7 @@ use App\Http\Controllers\landing_page;
 //         'phpVersion' => PHP_VERSION,
 //     ]);
 // });
-Route::get('/',[landing_page::class, 'index'])->name('landing_page');
+Route::get('/', [landing_page::class, 'index'])->name('landing_page');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -77,6 +78,15 @@ Route::middleware('auth')->group(function () {
     Route::delete('/absensi/{absensiKehadiran}/destroy', [absensiKehadiranController::class, 'destroy'])->name('absensi.destroy');
     Route::get('/absensi/showByDate', [absensiKehadiranController::class, 'showByDate'])->name('absensi.showByDate');
     Route::get('/absensi/pdf', [absensiKehadiranController::class, 'generatePDF'])->name('absensi.pdf');
+
+    Route::get('/informasis', [informasiController::class, 'index'])->name('informasis.index');
+    Route::get('/informasis/create', [informasiController::class, 'create'])->name('informasis.create');
+    Route::post('/informasis', [informasiController::class, 'store'])->name('informasis.store');
+    Route::get('/informasis/{informasi}', [informasiController::class, 'show'])->name('informasis.show');
+    Route::get('/informasis/{informasi}/edit', [informasiController::class, 'edit'])->name('informasis.edit');
+    Route::put('/informasis/{informasi}', [informasiController::class, 'update'])->name('informasis.update');
+    Route::delete('/informasis/{informasi}', [informasiController::class, 'destroy'])->name('informasis.destroy');
+    Route::post('/informasis/showByDate', [informasiController::class, 'showByDate'])->name('informasis.showByDate');
 });
 
 require __DIR__ . '/auth.php';

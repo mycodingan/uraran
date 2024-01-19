@@ -20,9 +20,7 @@
 								class="icon-menu"></i>
 						</li>
 						<li class="nav-item"><a href="{{route('absensi.index')}}" class="nav-link">Data Absen</a></li>
-						<li class="nav-item"><a href="{{route('wargas.create')}}" class="nav-link">Tambah Absensi</a></li>
-						<li class="nav-item"><a href="{{route('keluahans.index')}}" class="nav-link">member warga 	</a></li>
-
+						<li class="nav-item"><a href="{{route('absensi.create')}}" class="nav-link">Tambah Absensi</a></li>
 
 						<li class="nav-item-header">
 							<div class="text-uppercase font-size-xs line-height-xs">informasi</div> <i
